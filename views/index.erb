@@ -1,3 +1,4 @@
+<br><br><br>
 <h1>Análisis léxico de código JavaScript</h1>
 <p>
 	<nav>
@@ -6,13 +7,17 @@
 	</nav>
 </p>
 
+<br><br>
+
 <h2>Ficheros de ejemplo</h2>
 
-<div style="display:inline">
-	<button id ="input2" type="button" onclick="dump('/assignment.txt');">Asignación</button>
-	<button id ="input"  type="button" onclick="dump('/expression.txt');">Expresión</button>
-	<button id ="hello"  type="button" onclick="dump('/input.txt');">Fichero No JS</button>
+<div id="buttons">
+	<button id ="input2" type="button" onclick="dump('/assignment.txt');" class="mylink">Asignación</button>
+	<button id ="input"  type="button" onclick="dump('/expression.txt');" class="mylink">Expresión</button>
+	<button id ="hello"  type="button" onclick="dump('/input.txt');" class="mylink">Fichero No JS</button>
 </div>
+
+<br><br>
 
 <h2>Introduzca su propio código JavaScript</h2>
 
@@ -25,7 +30,7 @@
 </textarea>
 <br>
 
-<input id="PARSE" value=parse type=button class="mylink">
+<input id="PARSE" value=Parse type=button class="mylink">
 <pre id=OUTPUT></pre>
 
 <script>
