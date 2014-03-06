@@ -1,16 +1,20 @@
-<h1>Top Down Operator Precedence. Lexical Analysis</h1>
+<h1>Análisis léxico de código JavaScript</h1>
 <p>
 	<nav>
-		<a href="http://javascript.crockford.com/tdop/tdop.html" class="mylink">Top Down Operator Precedence tutorial</a>
-		<a href="https://github.com/crguezl/ull-etsii-grado-pl-minijavascript" class="mylink">Repo at GitHub</a>
+		<a href="http://javascript.crockford.com/tdop/tdop.html" class="mylink">Enlace a las pruebas</a>
+		<a href="https://github.com/alu0100598322/PracticaAnalizador" class="mylink">Repositorio en Github</a>
 	</nav>
 </p>
 
-<h2>Input</h2>
+<h2>Ficheros de ejemplo</h2>
 
-<p>
-	Fill the input box with javascript code:
-</p>
+<div style="display:inline">
+	<button id ="input2" type="button" onclick="dump('/assignment.txt');">Asignación</button>
+	<button id ="input"  type="button" onclick="dump('/expression.txt');">Expresión</button>
+	<button id ="hello"  type="button" onclick="dump('/input.txt');">Fichero No JS</button>
+</div>
+
+<h2>Introduzca su propio código JavaScript</h2>
 
 <textarea id="INPUT">
 	var a = "hello"; // initialize a
@@ -31,9 +35,3 @@
 		});
 	};
 </script>
-
-<div style="display:inline">
-	<button id ="input2" type="button" onclick="dump('/assignment.txt');">Asignación</button>
-	<button id ="input"  type="button" onclick="dump('/expression.txt');">Expresión</button>
-	<button id ="hello"  type="button" onclick="dump('/input.txt');">Fichero No JS</button>
-</div>
