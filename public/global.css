@@ -65,8 +65,7 @@ a {
   text-decoration:none;
 }
 
-a:link { color:#00FFFF; }
-a:visited { color:black; }
+a:link { color:black; }
 a:hover{ 
   background-color:black; 
   color: #FFF;
