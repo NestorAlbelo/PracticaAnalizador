@@ -10,16 +10,34 @@
   </head>
   <body>
 
-    <div id="mocha"></div>
+  	<script>
+      function  dump_ajax(fileName) {
+          $.ajax({
+            url : fileName,
+            dataType: "text",
+            success : function (data) {
+                $("#INPUT").val(data);
+                Prueba.value = data;
+            }
+        });
+      }
+      function dump_get(fileName) {
+          $.get(fileName, function (data) {
+              $("#INPUT").val(data);
+          });
+      };
+    </script> 
 
-    <textarea id="INPUT">
-      var a = "hello"; // initialize a
-      var b = function(x) {
-      var c = 3;
-      return x+c;
-    };
+    <h1><center> Pruebas Mocha </center></h1>
+
+    <div id="mocha"></div>
+    <center>
+    <textarea id="INPUT" style="width:50%; margin:auto; height: 100px;">
+      var a = 2;
     </textarea>
+    </center>
     <br>
+    <input id="PARSE" value=parse type=button class="mylink">
 
     <pre id="OUTPUT"></pre>
    
@@ -31,5 +49,6 @@
     <script src="../tokens.js"></script>
     <script>mocha.setup('tdd')</script>
     <script src="tests.js"></script>
+    <script> mocha.run();</script>
   </body>
 </html>
