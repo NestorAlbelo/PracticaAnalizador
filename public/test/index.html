@@ -39,8 +39,16 @@
     <br>
     <input id="PARSE" value=parse type=button class="mylink">
 
+    <input id="PARSE" value=parse type=button class="mylink">
     <pre id="OUTPUT"></pre>
-   
+    
+    <script>
+	function dump(fileName) {
+		$.get(fileName, function (data) {
+			$("#INPUT").val(data);
+		});
+	};
+    </script>
     
     <script src="chai.js"></script>
     <script src="mocha.js"></script>

@@ -16,6 +16,4 @@ suite('Pruebas de Tokens', function() {
 		main();
         assert.deepEqual($("#OUTPUT").html(), "{\n    \"name\": \"TypeError\",\n    \"message\": \"Object #&lt;Object&gt; has no method \'error\'\"\n}");
     });
-
-    
 });

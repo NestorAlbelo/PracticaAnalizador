@@ -6,32 +6,66 @@ html *
         padding-right: 10px; vertical-align: top;}
     table {width: 90%; border: 0px; cellpadding: 0px;}
 }
-#INPUT 
-{
-    border: none; 
-    color: black;
-    font-family: monospace;
-    height: 1in;
-    overflow: auto;
-    /* padding: 0.5em; */
-    width: 80%;
-    background-color: #66FFCC; 
-}
-body { background-color: #99FFFF; }
-#OUTPUT 
-{
-    background-color: #66FFCC; 
-    width: 80%;
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 300%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+h2 {
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#buttons {
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+mylink:hover{ 
+  background-color:black; 
+  color: #FFF;
+}
+
+#INPUT 
+{
+    border-style: dotted;
+    border-color: black;
+    color: black;
+    font-family: arial;
+    height: 1in;
+    overflow: auto;
+    /*padding: 0.5em;*/
+    width: 50%;
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    border-width:5px;
+}
+#OUTPUT 
+{
+    border-style: dashed;
+    border-color: black;
+    background-color: white; 
+    width: 50%;
+    color: black;
+    border-width:5px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 a {
   font-size: x-large;
   text-decoration:none;
 }
 
-a:link { color:#00FFFF; }
-a:visited { color:black; }
+a:link { color:black; }
 a:hover{ 
   background-color:black; 
   color: #FFF;
@@ -51,12 +85,22 @@ nav li {
 }
 
 .mylink {
-  background-color: #66FFCC;
+  background-color: white;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  border: 5px solid #009900;
+  border: 5px solid black;
   padding: 5px;
+}
+.mylink:hover{
+  background-color:black; 
+  color: #FFF;
 }
 
 /* Supress borders after the button is pressed */
 #PARSE:focus {outline:0; }
+#PARSE {
+	display:block;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
